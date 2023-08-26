@@ -15,17 +15,20 @@ import Profilepage from '../pages/Profilepage'
 import Registerpage from '../pages/Registerpage'
 import ResetPasswordPage from '../pages/ResetPasswordPage'
 import TestPage from '../pages/TestPage'
-
+import Pomodro_timer_app from '../pages/Pomodro_timer_app'
+// Pomodro_timer_app
 export default function AppRouter(props) {
   return (
     <>
       <Router>
         <Switch>
-          <Route exact path='/' component={Homepage} />
+          <Route exact path='/' component={Loginpage} />
           <ProtectedRoute exact path='/login' component={Loginpage} />
           <ProtectedRoute exact path='/register' component={Registerpage} />
-          <ProtectedRoute exact path='/profile' component={Profilepage} />
+          {/* <ProtectedRoute exact path='/profile' component={Profilepage} /> */}
           <ProtectedRoute exact path='/test' component={TestPage} />
+          <ProtectedRoute exact path='/profile' component={Pomodro_timer_app} />
+          
           <ProtectedRoute
             exact
             path='/forgot-password'

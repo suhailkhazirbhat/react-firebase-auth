@@ -29,7 +29,7 @@ export function Navbar() {
         mx='auto'
         spacing={4}
       >
-        <Navlink to='/' name='Firbase Authentication' size='lg' />
+        <div>Well Come To Pomodro Timer App</div>
         <Spacer />
         {!currentUser && <Navlink to='/login' name='Login' />}
         {!currentUser && <Navlink to='/register' name='Register' />}

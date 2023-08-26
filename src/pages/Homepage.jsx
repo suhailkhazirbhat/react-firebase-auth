@@ -19,7 +19,7 @@ export default function Homepage() {
       {/* <Text my={6}>{currentUser?.email}</Text> */}
 
       <Heading>
-        Firebase Authentication
+       Well Come  To Pomodro Timer App 
         <chakra.span
           fontWeight='black'
           fontStyle='italic'
